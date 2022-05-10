@@ -1,24 +1,31 @@
 import React from "react";
 
+import Image from "next/image";
+
+import aboutBanner from "../../public/assets/images/about-banner.png";
+import aboutVector from "../../public/assets/images/about-vector.svg";
+
+import { IoPlay } from "react-icons/io5";
+
 const About = () => {
   return (
     <section className="about">
       <div className="container">
         <figure className="about-banner">
-          <img
-            src="./assets/images/about-banner.png"
+          <Image
+            src={aboutBanner}
             alt="Eduland students"
             className="about-img"
           />
 
-          <img
-            src="./assets/images/about-vector.svg"
+          <Image
+            src={aboutVector}
             alt="Vector line art"
             className="vector-line"
           />
 
           <button className="play-btn">
-            <ion-icon name="play"></ion-icon>
+            <IoPlay />
           </button>
         </figure>
 

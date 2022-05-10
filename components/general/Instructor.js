@@ -1,11 +1,26 @@
 import React from "react";
 
+import Image from "next/image";
+
+import instructor1 from "../../public/assets/images/instructor-1.png";
+import instructor2 from "../../public/assets/images/instructor-2.png";
+import instructor3 from "../../public/assets/images/instructor-3.png";
+import instructorVactor1 from "../../public/assets/images/instructor-vactor-1.svg";
+import instructorVactor2 from "../../public/assets/images/instructor-vactor-2.svg";
+
+import {
+  IoLogoGoogle,
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+} from "react-icons/io5";
+
 const Instructor = () => {
   return (
     <section className="instructor">
       <div className="container">
-        <img
-          src="./assets/images/instructor-vactor-1.svg"
+        <Image
+          src={instructorVactor1}
           alt="Vector line art"
           className="vector-line"
         />
@@ -22,10 +37,7 @@ const Instructor = () => {
           <li>
             <div className="instructor-card">
               <figure className="card-banner">
-                <img
-                  src="./assets/images/instructor-1.png"
-                  alt="Shaapir Prio"
-                />
+                <Image src={instructor1} alt="Shaapir Prio" />
               </figure>
 
               <a href="#">
@@ -37,25 +49,25 @@ const Instructor = () => {
               <ul className="card-social-list">
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-google"></ion-icon>
+                    <IoLogoGoogle />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <IoLogoTwitter />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                    <IoLogoInstagram />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <IoLogoLinkedin />
                   </a>
                 </li>
               </ul>
@@ -65,7 +77,7 @@ const Instructor = () => {
           <li>
             <div className="instructor-card">
               <figure className="card-banner">
-                <img src="./assets/images/instructor-2.png" alt="Sellina" />
+                <Image src={instructor2} alt="Sellina" />
               </figure>
 
               <a href="#">
@@ -77,25 +89,25 @@ const Instructor = () => {
               <ul className="card-social-list">
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-google"></ion-icon>
+                    <IoLogoGoogle />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <IoLogoTwitter />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                    <IoLogoInstagram />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <IoLogoLinkedin />
                   </a>
                 </li>
               </ul>
@@ -105,35 +117,34 @@ const Instructor = () => {
           <li>
             <div className="instructor-card">
               <figure className="card-banner">
-                <img src="./assets/images/instructor-3.png" alt="John Smith" />
+                <Image src={instructor3} alt="John Smith" />
               </figure>
               <a href="#">
                 <h3 className="card-title">John Smith</h3>
               </a>
-              Name
               <p className="card-subtitle">Assistant Director</p>
               <ul className="card-social-list">
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-google"></ion-icon>
+                    <IoLogoGoogle />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <IoLogoTwitter />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                    <IoLogoInstagram />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="card-social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <IoLogoLinkedin />
                   </a>
                 </li>
               </ul>
@@ -141,8 +152,8 @@ const Instructor = () => {
           </li>
         </ul>
 
-        <img
-          src="./assets/images/instructor-vactor-2.svg"
+        <Image
+          src={instructorVactor2}
           alt="Vector line art"
           className="vector-line"
         />

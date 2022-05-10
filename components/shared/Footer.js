@@ -1,6 +1,15 @@
 import React from "react";
 
-import { IoLogoGoogle } from "react-icons/io5";
+import Image from "next/image";
+
+import logo from "../../public/assets/images/logo.svg";
+
+import {
+  IoLogoGoogle,
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+} from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -9,7 +18,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <img src="./assets/images/logo.svg" alt="Eduland logo" />
+              <Image src={logo} alt="Eduland logo" />
             </a>
 
             <p className="footer-text">
@@ -20,26 +29,25 @@ const Footer = () => {
             <ul className="social-list">
               <li>
                 <a href="#" className="social-link">
-                  <ion-icon name="logo-google"></ion-icon>
-                  {/* {IoLogoGoogle} */}
+                  <IoLogoGoogle />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <IoLogoTwitter />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
+                  <IoLogoInstagram />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <IoLogoLinkedin />
                 </a>
               </li>
             </ul>
@@ -166,7 +174,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p className="copyright">
-            &copy; 2022 <a href="">codewithAbdulhameed</a>. All right reserved
+            &copy; 2022 <a href="">codewithOani</a>. All right reserved
           </p>
         </div>
       </div>
