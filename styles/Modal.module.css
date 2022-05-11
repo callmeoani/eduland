@@ -1,0 +1,15 @@
+.modalBackground {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 30%;
+  height: auto;
+}
+
+.closeButton {
+  color: green;
+}

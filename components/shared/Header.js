@@ -6,7 +6,7 @@ import logo from "../../public/assets/images/logo.svg";
 
 const Header = () => {
   return (
-    <header className="header " data-header>
+    <header className="header active" data-header>
       <div className="container">
         <div className="overlay" data-overlay></div>
 
@@ -25,7 +25,6 @@ const Header = () => {
 
           <Link href="/">
             <a>
-              {/* <img src="./assets/images/logo.svg" alt="Eduland logo" /> */}
               <Image src={logo} alt="Eduland logo" />
             </a>
           </Link>
