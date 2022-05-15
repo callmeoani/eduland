@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import logo from "../../public/assets/images/logo.svg";
 
-const Header = () => {
+const Header = ({ setShowSignUp }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    //clean up the function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="header active" data-header>
+    <header className={`header ${isScrolled && "active"}`} data-header>
       <div className="container">
         <div className="overlay" data-overlay></div>
 
@@ -61,7 +79,12 @@ const Header = () => {
             </li>
           </ul>
 
-          <button className="btn btn-secondary">Get Started</button>
+          <button
+            onClick={() => setShowSignUp(true)}
+            className="btn btn-secondary"
+          >
+            Get Started
+          </button>
         </nav>
       </div>
     </header>

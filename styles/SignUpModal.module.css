@@ -1,0 +1,54 @@
+.modalBackground {
+  background-color: rgb(179, 222, 240);
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  height: 50vh;
+  border-radius: 10px;
+  margin: auto 10px;
+}
+
+.modalTitle {
+  color: green;
+  font-size: x-large;
+  margin: 20px 0;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formFields {
+  margin: 5px 0;
+}
+
+.button {
+  background-color: yellow;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.cancelButtonContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.cancelButton {
+  background-color: rgb(150, 150, 160);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  opacity: 0.6;
+}

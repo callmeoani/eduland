@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Head from "next/head";
 import Image from "next/image";
 // import Header from "../components/shared/Header2";
@@ -5,9 +7,16 @@ import Header from "../components/shared/Header";
 import Main from "../components/general/Main";
 import Footer from "../components/shared/Footer";
 import GoToTop from "../components/general/GoToTop";
+import SignUpModal from "../components/my-additions/SignUpModal";
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  // const handleClick = () => {
+
+  // }
+
   return (
     <div>
       <Head>
@@ -16,7 +25,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header setShowSignUp={setShowSignUp} />
+      {showSignUp && <SignUpModal setShowSignUp={setShowSignUp} />}
+
       <Main />
       <Footer />
       <GoToTop />

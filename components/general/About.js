@@ -50,10 +50,6 @@ const About = () => {
               />
             )}
           </button>
-          {/* {modalIsOpen && (
-            <Modal setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen} />
-            // <ModalVideo setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen} />
-          )} */}
         </figure>
 
         <div className="about-content">
